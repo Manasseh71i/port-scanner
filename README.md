@@ -1,16 +1,17 @@
-import socket
+# Port Scanner 🔐
 
-target = input("Enter target IP or website: ")
+This is a simple Python port scanner that checks open ports on a target.
 
-print(f"\nScanning target: {target}\n")
+## Features
+- Scans ports 1–100
+- Detects open ports
+- Uses Python socket module
 
-for port in range(1, 101):
-    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    socket.setdefaulttimeout(0.5)
-    
-    result = sock.connect_ex((target, port))
-    
-    if result == 0:
-        print(f"Port {port} is OPEN")
-    
-    sock.close()
+## Usage
+1. Run the script:
+   python scanner.py
+
+2. Enter a target IP or website
+
+## Author
+IRADUKUNDA Manasseh
