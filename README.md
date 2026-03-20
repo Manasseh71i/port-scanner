@@ -1,4 +1,4 @@
-# Port Scanner 🔐
+# Port Scanner 
 
 This is a simple Python port scanner that checks open ports on a target.
 
